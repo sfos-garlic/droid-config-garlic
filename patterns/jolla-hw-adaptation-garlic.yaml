@@ -7,7 +7,6 @@ Requires:
 - droid-hal-garlic
 - droid-hal-garlic-img-boot
 - droid-hal-garlic-kernel-modules
-- droid-hal-garlic-detritus
 - droid-config-garlic-sailfish
 - droid-config-garlic-pulseaudio-settings
 - droid-config-garlic-policy-settings
@@ -81,6 +80,7 @@ Requires:
 - jolla-mediaplayer-radio
 
 # For devices with SD Card
-#- sd-utils
+- sd-utils
 
 Summary: Jolla HW Adaptation garlic
+
