@@ -29,6 +29,16 @@ Requires:
 # Required for Jolla Store Access
 - patterns-sailfish-consumer-generic
 
+# Add Useful apps
+- sailfish-office
+- jolla-calculator
+- jolla-email
+- jolla-notes
+- jolla-clock
+- jolla-mediaplayer
+- jolla-calendar
+- sailfish-weather
+
 # For Mozilla location services (online)
 - geoclue-provider-mlsdb
 
