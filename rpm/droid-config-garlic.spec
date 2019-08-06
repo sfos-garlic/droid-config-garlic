@@ -15,7 +15,7 @@
 # For 4-5.5" device screen sizes of 16:9 ratio, use this formula (hold portrait):
 # pixel_ratio = 4.5/DiagonalDisplaySizeInches * HorizontalDisplayResolution/540
 # Other screen sizes and ratios will require more trial-and-error.
-%define pixel_ratio 1.8
+%define pixel_ratio 1.6
 # Test this modem 1 config on garlic
 %define have_modem 1
 Provides: ofono-configs
