@@ -19,9 +19,11 @@
 # Test this modem 1 config on garlic
 %define have_modem 1
 Provides: ofono-configs
+Obsoletes: ofono-configs-mer
 
 %include droid-configs-device/droid-configs.inc
-
+%include patterns/patterns-sailfish-device-adaptation-garlic.inc
+%include patterns/patterns-sailfish-device-configuration-garlic.inc
 # IMPORTANT if you want to comment out any macros in your .spec, delete the %
 # sign, otherwise they will remain defined! E.g.:
 #define some_macro "I'll not be defined because I don't have % in front"
