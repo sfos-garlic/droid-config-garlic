@@ -30,7 +30,7 @@ Requires: zypper
 Requires: sailfish-content-graphics-z%{icon_res}
 
 # For multi-SIM devices
-#Requires: jolla-settings-networking-multisim
+Requires: jolla-settings-networking-multisim
 
 # For devices which support NFC
 #Requires: jolla-settings-system-nfc
