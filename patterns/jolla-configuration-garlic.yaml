@@ -1,0 +1,6 @@
+Description: Pattern with packages for garlic configurations
+Name: jolla-configuration-garlic
+Requires:
+- patterns-sailfish-device-configuration-garlic
+
+Summary: Jolla Configuration garlic
