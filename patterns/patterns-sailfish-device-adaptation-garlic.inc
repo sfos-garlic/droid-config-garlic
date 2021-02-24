@@ -16,17 +16,23 @@ Requires: droid-hal-version-garlic
 Requires: droid-hal-garlic-detritus
 
 # Fingerprint unlocking daemon for community ports
-#Requires: sailfish-fpd-community
-#Requires: sailfish-devicelock-fpd
-#Requires: droid-biometry-fp
+Requires: sailfish-fpd-community
+Requires: sailfish-devicelock-fpd
+Requires: droid-biometry-fp
 
 # Hybris packages
 Requires: libhybris-libEGL
 Requires: libhybris-libGLESv2
 Requires: libhybris-libwayland-egl
 
+# Bluetooth
+Requires: bluebinder
+
+# Telephony
+Requires: ofono-ril-binder-plugin
+
 # Sensors
-Requires: hybris-libsensorfw-qt5-binder
+Requires: hybris-libsensorfw-qt5
 
 # Vibra
 Requires: ngfd-plugin-native-vibrator
@@ -58,8 +64,19 @@ Requires: gmp-droid
 # This is needed for notification LEDs
 Requires: mce-plugin-libhybris
 
-# USB mode controller
+## USB mode controller
+# Enables mode selector upon plugging USB cable:
 Requires: usb-moded
+Requires: usb-moded-defaults-android
+Requires: usb-moded-developer-mode-android
+
+# Extra useful modes not officially supported:
+# might need some configuration to get working
+#Requires: usb-moded-mass-storage-android-config
+# working but careful with roaming!
+Requires: usb-moded-connection-sharing-android-config
+# android diag mode only usable for certain android tools
+#Requires: usb-moded-diag-mode-android
 
 # hammerhead, grouper, and maguro use this in scripts, so include for all
 Requires: rfkill
@@ -74,8 +91,14 @@ Requires: jolla-devicelock-daemon-encsfa
 Requires: geoclue-provider-hybris
 
 # For FM radio on some QCOM devices
-#Requires: qt5-qtmultimedia-plugin-mediaservice-irisradio
-#Requires: jolla-mediaplayer-radio
+Requires: qt5-qtmultimedia-plugin-mediaservice-irisradio
+Requires: jolla-mediaplayer-radio
+
+# For devices with SD Card
+Requires: sd-utils
+
+# For torch
+Requires: jolla-settings-system-flashlight
 
 # NFC support
 # 1. binder plugin requires Android 8 or a newer base
