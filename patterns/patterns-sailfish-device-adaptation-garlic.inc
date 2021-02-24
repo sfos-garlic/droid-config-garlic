@@ -14,6 +14,10 @@ Requires: droid-config-garlic-flashing
 Requires: droid-config-garlic-bluez5
 Requires: droid-hal-version-garlic
 Requires: droid-hal-garlic-detritus
+
+# Fingerprint unlocking daemon for community ports
+#Requires: sailfish-fpd-community
+#Requires: sailfish-devicelock-fpd
 #Requires: droid-biometry-fp
 
 # Hybris packages
@@ -22,7 +26,7 @@ Requires: libhybris-libGLESv2
 Requires: libhybris-libwayland-egl
 
 # Sensors
-Requires: hybris-libsensorfw-qt5
+Requires: hybris-libsensorfw-qt5-binder
 
 # Vibra
 Requires: ngfd-plugin-native-vibrator
